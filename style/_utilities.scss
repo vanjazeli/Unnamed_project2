@@ -1,0 +1,40 @@
+// colors
+
+$light_grey: #f4f4f4;
+$black: #000;
+$white: #fff;
+
+// links
+
+.link1 {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: $black;
+  position: relative;
+  font-weight: 500 !important;
+  transition: opacity 250ms ease-in-out;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+// containers
+
+.main_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+// text
+
+.grey {
+  color: #999;
+}
+
+// other
+
+.card {
+  max-width: 250px;
+}

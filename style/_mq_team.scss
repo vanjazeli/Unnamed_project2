@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+  #team_content {
+    flex-direction: column;
+    padding: 2rem auto;
+    .card {
+      margin: auto;
+      margin-bottom: 4rem;
+    }
+  }
+}

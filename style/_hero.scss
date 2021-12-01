@@ -1,0 +1,32 @@
+#hero {
+  background: url(/img/hero_background.jpg) no-repeat fixed center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include overlay;
+  &::after {
+    opacity: 0.5;
+  }
+  #hero_content {
+    position: relative;
+    z-index: 2;
+    color: $light_grey;
+    padding: 2rem;
+    text-align: center;
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+  #hero_svg {
+    position: absolute;
+    bottom: -1px;
+    left: -1vw;
+    width: 102vw;
+    z-index: 3;
+    img {
+      display: block;
+    }
+  }
+}
