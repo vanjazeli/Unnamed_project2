@@ -1,14 +1,10 @@
 #navbar {
-  // background: $light_grey;
   position: fixed;
   top: 0;
   z-index: 99;
   width: 100%;
   transform: translate3d(0, 0, 0);
-  // box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.012),
-  //   0px 6.7px 5.3px rgba(0, 0, 0, 0.011), 0px 12.5px 10px rgba(0, 0, 0, 0.011),
-  //   0px 22.3px 17.9px rgba(0, 0, 0, 0.014),
-  //   0px 41.8px 33.4px rgba(0, 0, 0, 0.025), 0px 100px 80px rgba(0, 0, 0, 0.07);
+  transition: 250ms ease-in-out;
   .main_container {
     display: flex;
     justify-content: space-between;
@@ -21,10 +17,14 @@
     }
     #navbar_one {
       white-space: nowrap;
+      a {
+        font-weight: 800 !important;
+      }
     }
     #navbar_two {
       a {
         margin-right: 2rem;
+        font-weight: 400;
       }
       :last-child {
         margin: 0;

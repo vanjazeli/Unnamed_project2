@@ -40,9 +40,11 @@ html {
 @import "./about";
 @import "./team";
 @import "./transition";
+@import "./clients";
 
 // media queries
 
+@import "./mq_utilities";
 @import "./mq_navbar";
 @import "./mq_hero";
 @import "./mq_about";

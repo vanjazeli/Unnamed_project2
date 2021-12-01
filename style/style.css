@@ -3,12 +3,24 @@
   font-size: 1.1rem;
   color: #000;
   position: relative;
-  font-weight: 500 !important;
-  -webkit-transition: opacity 250ms ease-in-out;
-  transition: opacity 250ms ease-in-out;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 
 .link1:hover {
+  opacity: 0.5;
+}
+
+.btn1 {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #000;
+  position: relative;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.btn1:hover {
   opacity: 0.5;
 }
 
@@ -72,6 +84,8 @@ html {
   width: 100%;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 
 #navbar .main_container {
@@ -97,8 +111,13 @@ html {
   white-space: nowrap;
 }
 
+#navbar .main_container #navbar_one a {
+  font-weight: 800 !important;
+}
+
 #navbar .main_container #navbar_two a {
   margin-right: 2rem;
+  font-weight: 400;
 }
 
 #navbar .main_container #navbar_two :last-child {
@@ -112,6 +131,7 @@ html {
 #hero {
   background: url(/img/hero_background.jpg) no-repeat fixed center/cover;
   height: 100vh;
+  max-height: 1000px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,6 +157,33 @@ html {
 
 #hero::after {
   opacity: 0.5;
+}
+
+#hero #arrow {
+  position: fixed;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  right: 5vw;
+  bottom: 5vw;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#hero #arrow:hover {
+  cursor: pointer;
 }
 
 #hero #hero_content {
@@ -261,6 +308,7 @@ html {
 #transition {
   background: url("/img/transition.jpg") no-repeat fixed center center/cover;
   height: 600px;
+  padding: 2rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +325,8 @@ html {
   color: #f4f4f4;
   position: relative;
   z-index: 3;
+  text-align: center;
+  font-size: 3rem;
 }
 
 #transition::after {
@@ -311,12 +361,29 @@ html {
   position: absolute;
   left: -1vw;
   width: 102vw;
-  bottom: 0;
+  bottom: -1px;
   z-index: 2;
 }
 
 #transition #transition_svg_two img {
   display: block;
+}
+
+#clients {
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+#clients .main_container .grey {
+  margin: 6rem 0;
+}
+
+@media (max-width: 450px) {
+  .main_container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -325,6 +392,13 @@ html {
   }
   #navbar_three {
     display: block !important;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -357,7 +431,7 @@ html {
   }
   #team_content .card {
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

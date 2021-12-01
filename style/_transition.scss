@@ -1,6 +1,7 @@
 #transition {
   background: url("/img/transition.jpg") no-repeat fixed center center/cover;
   height: 600px;
+  padding: 2rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,6 +10,8 @@
     color: $light_grey;
     position: relative;
     z-index: 3;
+    text-align: center;
+    font-size: 3rem;
   }
   @include overlay;
   &::after {
@@ -29,7 +32,7 @@
     position: absolute;
     left: -1vw;
     width: 102vw;
-    bottom: 0;
+    bottom: -1px;
     z-index: 2;
     img {
       display: block;
