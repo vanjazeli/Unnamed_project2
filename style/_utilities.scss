@@ -65,3 +65,17 @@ $white: #fff;
     z-index: 1;
   }
 }
+
+@mixin clients_row {
+  i {
+    display: inline-block;
+    font-size: 4rem;
+    margin-right: 2rem;
+    color: #bbb;
+    transition: 250ms ease-in-out;
+    &:hover {
+      color: $black;
+      transform: translateY(-10px);
+    }
+  }
+}

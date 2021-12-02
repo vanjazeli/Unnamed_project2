@@ -1,12 +1,42 @@
 #clients {
-  height: 100vh;
   padding: 2rem;
   text-align: center;
   .main_container {
+    h2 {
+      margin-top: 6rem;
+      margin-bottom: 1rem;
+    }
     .grey {
-      margin: 6rem 0;
+      margin-bottom: 6rem;
     }
     #clients_content {
+      #clients_flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6rem;
+        #clients_flex_one {
+          @include clients_row;
+          padding: 1rem 1rem;
+          :last-child {
+            margin: 0;
+          }
+        }
+        #clients_flex_two {
+          @include clients_row;
+          padding: 1rem 1rem;
+          :last-child {
+            margin: 0;
+          }
+        }
+        #clients_flex_three {
+          @include clients_row;
+          padding: 1rem 1rem;
+          :last-child {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }

@@ -1,9 +1,11 @@
 @media (max-width: 768px) {
   #about_content {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   #about_content_two {
     padding-left: 0 !important;
-    padding-bottom: 4rem;
+  }
+  #about_content_one {
+    margin-bottom: 4rem;
   }
 }
